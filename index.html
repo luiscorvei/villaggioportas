@@ -1,0 +1,370 @@
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villaggio Portas - Curitiba</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <div class="header container">
+
+      <div class="header-logo"><img src="./assets/imgs/produtos/logo.png" style="width: 7.5em" alt="Villaggio Portas"></div>
+  
+      <div class="contact-info">
+  
+          <i class="fas fa-phone"></i>
+  
+          <span>(41) 0000-0000</span>
+  
+          <i class="fas fa-envelope"></i>
+  
+          <span>villaggioportas@gmail.com</span>
+  
+      </div>
+  
+  </div>
+
+    <a href="#" class="whatsapp-float" target="_blank">
+
+      <i class="fab fa-whatsapp"></i>
+  
+  </a>
+
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Portas Internas</a></li>
+        <li><a href="#">Portas Externas</a></li>
+        <li><a href="#">Portas Sob Medida</a></li>
+        <li><a href="#">Caixilhos</a></li>
+        <li><a href="#">Acessórios</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>
+
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item" style="background-image: url('./assets/imgs/image1.jpg')">
+          <div>
+            <h1>
+              PORTAS DE QUALIDADE
+              <br />
+              PARA TODOS OS AMBIENTES
+            </h1>
+            <p>
+              Entre em contato e faça um orçamento hoje mesmo
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/imgs/image2.jpg')">
+          <div>
+            <h1>SOLUÇÕES PERSONALIZADAS</h1>
+            <p>Encontre a porta perfeita para seu espaço</p>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('./assets/imgs/image3.jpg')">
+          <div>
+            <h1>DESIGN E FUNCIONALIDADE</h1>
+            <p>Combinando estilo e qualidade</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control carousel-control-prev" href="#" onclick="changeSlide(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="carousel-control carousel-control-next" href="#" onclick="changeSlide(1)">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="nav">
+        <button class="category-btn active" data-category="internas">Portas Internas</button>
+        <button class="category-btn" data-category="entrada">Portas Externas</button>
+        <button class="category-btn" data-category="fogo">Caixilhos</button>
+        <button class="category-btn" data-category="promocoes">Acessórios</button>
+      </div>
+      <div class="products" id="productContainer">
+        <!-- Produtos serão carregados dinamicamente via JS -->
+      </div>
+    </div>
+
+    <section id="sobre">
+
+      <h2>Sobre a Villaggio Portas</h2>
+
+      <p>A Villaggio Portas é uma empresa especializada em portas, caixilhos e acessórios, sediada em Curitiba - PR desde 2012. Com mais de uma década de experiência no mercado, a Villaggio se destaca pelo compromisso com a qualidade, design inovador e soluções personalizadas que atendem às necessidades de seus clientes. Nossa missão é transformar espaços com produtos que aliam funcionalidade, durabilidade e estética, sempre buscando a satisfação e confiança de quem escolhe a Villaggio Portas.</p>
+
+  </section>
+
+    <div class="benefit-section">
+        <div class="container">
+          <div class="text-content">
+            <div class="benefit">
+              <i class="fas fa-award"></i>
+              <div>
+                <h2>Alta qualidade</h2>
+                <p>
+                  Alta qualidade em cada detalhe – desde a escolha dos materiais até a instalação. Confie em nós e obtenha portas ideais, prontas para uso, sem complicações e preocupações desnecessárias
+                </p>
+              </div>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h2>Economia de tempo</h2>
+                <p>
+                  Economize tempo, obtendo portas prontas para uso sem a necessidade de procurar materiais e organizar a instalação por conta própria
+                </p>
+              </div>
+            </div>
+            <div class="benefit">
+              <i class="fas fa-user-check"></i>
+              <div>
+                <h2>Serviço personalizado</h2>
+                <p>
+                  Levamos em consideração suas necessidades e preferências únicas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="image-content">
+            <div class="background-shape"></div>
+            <img src="./assets/imgs/ref.png" alt="Portas Decoradas">
+          </div>
+        </div>
+      </div>
+
+    <div class="reviews-section">
+        <div class="container">
+            <div class="title">Depoimentos dos nossos clientes</div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="review-header">
+                        <i class="fas fa-comment-alt"></i>
+                        <div class="name">Anne Gabriele</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        Experiência surreal, me deram o prazo de atendimento 4 dias úteis p entrega da minha porta porém com 1 dia já fizeram a entrega, a ansiedade agradece, sem contar o capricho dos detalhes. 
+                    </div>
+                    <div class="review-footer">
+                        <a href="https://g.co/kgs/LpWU4vr">Ler a avaliação completa</a>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <i class="fas fa-comment-alt"></i>
+                        <div class="name">Bianca Cristine dos Santos</div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        Excelente atendimento via WhatsApp e presencialmente, preços bem acessíveis. Vendem para materiais de construção/lojas/obras, mas também atendem cliente no varejo, comprei apenas uma porta simples, mas foram super atenciosos.
+                        A porta que comprei tem um reforço dentro, fiquei bem satisfeita.
+                    </div>
+                    <div class="review-footer">
+                        <a href="https://g.co/kgs/NjULhJj">Ler a avaliação completa</a>
+                    </div>
+                </div>
+                <div class="review">
+                  <div class="review-header">
+                      <i class="fas fa-comment-alt"></i>
+                      <div class="name">Paulo de Jesus</div>
+                      <div class="stars">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                      </div>
+                  </div>
+                  <div class="review-content">
+                    Encontrei as mesmas portas que se encontra na Leroy Merlin, Cassol, Balaroti e Nichele por um preço melhor.
+                  </div>
+                  <div class="review-footer">
+                      <a href="https://g.co/kgs/jqAsCp9">Ler a avaliação completa</a>
+                  </div>
+              </div>
+              <div class="review">
+                <div class="review-header">
+                    <i class="fas fa-comment-alt"></i>
+                    <div class="name">Francielle Colato</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-content">
+                  Tive uma boa experiência comprando ai, ótimo atendimento, funcionários muito atenciosos e super prestativos, lugar com preço bom e de produtos de qualidade, sempre bom fazer negócios aí, super indico
+                </div>
+                <div class="review-footer">
+                    <a href="https://g.co/kgs/yJqCD2v">Ler a avaliação completa</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="location-section">
+
+      <div class="container">
+  
+          <header>
+  
+              <h2>Nossa Localização</h2>
+  
+          </header>
+  
+          <article class="location-content">
+  
+              <aside class="location-info">
+  
+                  <address>
+  
+                      <h3>Endereço</h3>
+  
+                      <p>
+  
+                          <i class="fas fa-map-marker-alt"></i>
+  
+                          R. Eduardo Pinto da Rocha, 5094 - Umbará, Curitiba - PR, CEP: 81930-350
+  
+                      </p>
+  
+                  </address>
+  
+                  <nav class="contact-info">
+  
+                      <h3>Contato</h3>
+  
+                      <ul>
+  
+                          <li>
+  
+                              <i class="fas fa-phone"></i>
+  
+                              <a href="tel:+0000000000">(00) 0000-0000</a>
+  
+                          </li>
+  
+                          <li>
+  
+                              <i class="fas fa-envelope"></i>
+  
+                              <a href="mailto:villaggioportas@gmail.com">villaggioportas@gmail.com</a>
+  
+                          </li>
+  
+                      </ul>
+  
+                  </nav>
+  
+              </aside>
+  
+              <figure class="map-container">
+  
+                  <iframe 
+  
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.278693188476!2d-49.27120582592349!3d-25.562393177477645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfbe159db5b33%3A0xaa274d7a05fd24f8!2sVillaggio%20Portas!5e0!3m2!1spt-BR!2sbr!4v1734348492878!5m2!1spt-BR!2sbr" 
+  
+                      width="100%" 
+  
+                      height="450" 
+  
+                      style="border:0;" 
+  
+                      allowfullscreen="" 
+  
+                      loading="lazy"
+  
+                      title="Localização da Empresa">
+  
+                  </iframe>
+  
+                  <figcaption>Localização da nossa empresa</figcaption>
+  
+              </figure>
+  
+          </article>
+  
+      </div>
+  
+  </section>
+
+  <footer>
+    <div class="container">
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Portas Internas</a></li>
+                <li><a href="#">Portas Externas</a></li>
+                <li><a href="#">Portas Sob Medida</a></li>
+                <li><a href="#">Caixilhos</a></li>
+                <li><a href="#">Acessórios</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/imgs/produtos/logo.png" alt="Villaggio Portas">
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    (41) 0000-0000
+                </p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    villaggioportas@gmail.com
+                </p>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Redes Sociais</h4>
+                <div>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-legal">
+                <h4>Informações Legais</h4>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>&copy; 2023 Villaggio Portas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
