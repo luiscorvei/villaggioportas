@@ -54,7 +54,7 @@ imagem: './assets/imgs/produtos/portabrancaacabada.png',
 },
 {
 
-nome: 'Porta Mogno Acabda',
+nome: 'Porta Mogno Acabada',
 
 imagem: './assets/imgs/produtos/portamognoacabada.png',
 
@@ -160,7 +160,7 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
 },
 {
 
-    nome: 'Porta Vidro Reto Selado Eucalipto',
+    nome: 'Porta Vidro Selada Eucalipto',
     
     imagem: './assets/imgs/produtos/vidroretoseladoeucalipto.jpg',
     
