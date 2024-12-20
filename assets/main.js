@@ -51,12 +51,16 @@ nome: 'Porta Branca Acabada',
 
 imagem: './assets/imgs/produtos/portabrancaacabada.png',
 
+link: './brancaacabada.html'
+
 },
 {
 
 nome: 'Porta Mogno Acabada',
 
 imagem: './assets/imgs/produtos/portamognoacabada.png',
+
+link: './portamognoacabada.html'
 
 },
 {
@@ -65,12 +69,16 @@ nome: 'Porta de Correr Branca',
 
 imagem: './assets/imgs/produtos/portadecorrerbranca.png',
 
+link: './correrbranca.html'
+
 },
 {
 
 nome: 'Porta de Correr',
 
 imagem: './assets/imgs/produtos/portadecorrer.png',
+
+link: './portadecorrer.html'
 
 },
 {
@@ -79,12 +87,16 @@ nome: 'Porta de Curupixá',
 
 imagem: './assets/imgs/produtos/curupixa.jpeg',
 
+link: './curupixa.html'
+
 },
 {
 
 nome: 'Porta de Ipê',
 
 imagem: './assets/imgs/produtos/portadeipe.jpeg',
+
+link: './ipe.html'
 
 },
 {
@@ -93,6 +105,8 @@ nome: 'Porta de Pinus',
 
 imagem: './assets/imgs/produtos/pinus.jpeg',
 
+link: './pinus.html'
+
 },
 {
 
@@ -100,12 +114,16 @@ nome: 'Porta de Tauari',
 
 imagem: './assets/imgs/produtos/tauari.jpg',
 
+link: './tauari.html'
+
 },
 {
 
 nome: 'Porta Frisada',
 
 imagem: './assets/imgs/produtos/portafrisada.jpg',
+
+link: './frisada.html'
 
 }
 
@@ -436,36 +454,32 @@ promocoes: [
 
 function criarProdutoHTML(produto) {
 
-const descontoHTML = produto.desconto > 0 ? 
+    return `
 
-`<span class="discount">-${produto.desconto}%</span>
+    <div class="product">
 
-<span class="old-price">R$${produto.precoAntigo},00</span>` : '';
+        <img src="${produto.imagem}" alt="${produto.nome}"/>
 
+        <div class="title">${produto.nome}</div>
 
-return `
+        <button class="button" onclick="redirecionarProduto('${produto.link || '#'}')">Ver</button>
 
-<div class="product">
+    </div>
 
-<img src="${produto.imagem}" alt="${produto.nome}"/>
-
-<div class="availability">
-
-    <i class="fas fa-circle"></i>
-
-    Em estoque, entrega em 1-7 dias
-
-</div>
-
-<div class="title">${produto.nome}</div>
-
-<button class="button">Ver</button>
-
-</div>
-
-`;
+    `;
 
 }
+
+function redirecionarProduto(link) {
+
+    if (link && link !== '#') {
+
+        window.location.href = link;
+
+    }
+
+}
+
 
 
 // Função para carregar produtos por categoria
@@ -520,3 +534,70 @@ carregarProdutos(categoria);
 
 carregarProdutos('internas');
 
+document.addEventListener('DOMContentLoaded', function() {
+    // Seleciona todos os links de navegação
+    const navLinks = document.querySelectorAll('nav ul li a');
+    const footerNavLinks = document.querySelectorAll('.footer-nav ul li a');
+    
+    // Função para adicionar rolagem suave
+    function addSmoothScroll(links) {
+        links.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); // Previne o comportamento padrão do link
+                
+                // Determina o texto do link para mapear para a seção correta
+                const linkText = this.textContent.toLowerCase().replace(/\s+/g, '-');
+                
+                // Mapeia os textos dos links para os IDs das seções e categorias
+                const sectionMap = {
+                    'portas-internas': {
+                        section: '#produtos',
+                        category: 'internas'
+                    },
+                    'portas-externas': {
+                        section: '#produtos',
+                        category: 'entrada'
+                    },
+                    'portas-sob-medida': '#produtos',
+                    'caixilhos': {
+                        section: '#produtos',
+                        category: 'fogo'
+                    },
+                    'acessórios': {
+                        section: '#produtos',
+                        category: 'promocoes'
+                    },
+                    'sobre': '#sobre',
+                    'localização': '.location-section'
+                };
+                
+                // Encontra a seção correspondente
+                const sectionInfo = sectionMap[linkText] || `#${linkText}`;
+                
+                // Determina o seletor da seção e a categoria
+                const sectionSelector = typeof sectionInfo === 'object' ? sectionInfo.section : sectionInfo;
+                const targetSection = document.querySelector(sectionSelector);
+                
+                if (targetSection) {
+                    // Rola suavemente para a seção
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+
+                    // Se for uma categoria específica, clica no botão correspondente
+                    if (typeof sectionInfo === 'object' && sectionInfo.category) {
+                        const categoryBtn = document.querySelector(`.category-btn[data-category="${sectionInfo.category}"]`);
+                        if (categoryBtn) {
+                            categoryBtn.click();
+                        }
+                    }
+                }
+            });
+        });
+    }
+    
+    // Adiciona rolagem suave para links de navegação principal e rodapé
+    addSmoothScroll(navLinks);
+    addSmoothScroll(footerNavLinks);
+}); 
