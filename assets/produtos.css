@@ -23,7 +23,7 @@ body {
     gap: 10px;
 }
 .contact-info i {
-    color: #f5a623;
+    color: black;
     margin-right: 5px;
 }
 .contact-info span {
@@ -117,20 +117,6 @@ body {
     margin-right: 10px;
 }
 
-@media (max-width: 768px) {
-    .container-produto {
-        flex-direction: column;
-        align-items: center;
-    }
-    .main-image {
-        margin-bottom: 20px;
-    }
-    .product-details {
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
 .container-produto {
     display: flex;
     align-items: flex-start;
@@ -179,20 +165,114 @@ body {
     border-radius: 6px;
 }
 
-@media (max-width: 768px) {
-    .main-image-container {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+
+    .container-produto {
+
+        flex-direction: column; /* Empilha verticalmente em telas menores */
+
+        padding: 10px;
+
+        align-items: center; /* Centraliza os itens */
+
     }
 
-    .product-thumbnails {
-        flex-direction: row;
-        margin-right: 0;
-        margin-top: 10px;
-        justify-content: center;
+
+    .main-image {
+
+        width: 100%; /* Ocupa toda a largura */
+
+        margin-bottom: 20px; /* Espaço entre a imagem e os detalhes */
+
     }
 
-    .product-thumbnails .thumbnail {
-        width: 60px;
-        height: 60px;
+
+    .main-image img {
+
+        width: 100%; /* Imagem responsiva */
+
+        max-width: 400px; /* Limite máximo de largura */
+
+        height: auto; /* Mantém a proporção */
+
     }
+
+
+    .product-details {
+
+        width: 100%; /* Ocupa toda a largura */
+
+        margin-left: 0; /* Remove a margem lateral */
+
+        text-align: center; /* Centraliza o texto */
+
+    }
+
+
+    .product-details h1 {
+
+        font-size: 20px; /* Tamanho de fonte menor para mobile */
+
+        text-align: center;
+
+    }
+
+
+    .product-details .info {
+
+        font-size: 12px; /* Fonte menor */
+
+        text-align: center;
+
+        margin: 10px 0;
+
+    }
+
+
+    .whatsapp-button {
+
+        display: inline-block;
+
+        width: 100%; /* Botão ocupa toda a largura */
+
+        max-width: 300px; /* Largura máxima */
+
+        margin: 0 auto; /* Centraliza o botão */
+
+    }
+
+}
+
+
+/* Animação adicional para transição suave */
+
+@media screen and (max-width: 768px) {
+
+    .container-produto > * {
+
+        animation: fadeInUp 0.5s ease;
+
+    }
+
+
+    @keyframes fadeInUp {
+
+        from {
+
+            opacity: 0;
+
+            transform: translateY(20px);
+
+        }
+
+        to {
+
+            opacity: 1;
+
+            transform: translateY(0);
+
+        }
+
+    }
+
 }

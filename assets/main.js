@@ -135,7 +135,9 @@ entrada: [
 
 nome: 'Porta Almofadada Mista',
 
-imagem: './assets/imgs/produtos/almofadadamista.jpg'
+imagem: './assets/imgs/produtos/almofadadamista.jpg',
+
+link: './almofadadamista.html'
 
 },
 
@@ -143,7 +145,9 @@ imagem: './assets/imgs/produtos/almofadadamista.jpg'
 
 nome: 'Porta BBB Selada Cedro',
 
-imagem: './assets/imgs/produtos/bbbseladacedro.jpeg'
+imagem: './assets/imgs/produtos/bbbseladacedro.jpeg',
+
+link: './bbbseladacedro.html'
 
 },
 
@@ -153,6 +157,8 @@ nome: 'Porta Mexicana Tauari',
 
 imagem: './assets/imgs/produtos/mexicanatauari.jpeg',
 
+link: './mexicanatauari.html'
+
 },
 
 {
@@ -161,6 +167,8 @@ nome: 'Porta Torneada Mista',
 
 imagem: './assets/imgs/produtos/torneadamista.jpg',
 
+link: './torneadamista.html'
+
 },
 {
 
@@ -168,12 +176,16 @@ nome: 'Porta BBB Selada Eucalipto',
 
 imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
 
+link: './bbbseladaeucalipto.html'
+
 },
 {
 
     nome: 'Porta Tijolinho Tauari',
     
     imagem: './assets/imgs/produtos/tijolinhotauari.png',
+
+    link: './tijolinhotauari.html'
     
 },
 {
@@ -181,6 +193,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Vidro Selada Eucalipto',
     
     imagem: './assets/imgs/produtos/vidroretoseladoeucalipto.jpg',
+
+    link: './vidroseladaeucalipto.html'
     
 },
 {
@@ -188,6 +202,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Vidro Selada Cedro',
     
     imagem: './assets/imgs/produtos/vidrocurvoseladacedro.jpg',
+
+    link: './vidroseladacedro.html'
     
 },
 {
@@ -195,6 +211,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Malta Selada Cedro',
     
     imagem: './assets/imgs/produtos/maltaseladacedro.jpeg',
+
+    link: './maltaseladacedro.html'
     
 },
 {
@@ -202,6 +220,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Diagonal Mista',
     
     imagem: './assets/imgs/produtos/diagonalmista.jpg',
+
+    link: './diagonalmista.html'
     
 },
 {
@@ -209,6 +229,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Frisada Tauari',
     
     imagem: './assets/imgs/produtos/frisadatauari.jpeg',
+
+    link: './frisadatauari.html'
     
 },
 {
@@ -216,6 +238,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Gaveta Tauari',
     
     imagem: './assets/imgs/produtos/gavetatauari.png',
+
+    link: './gavetatauari.html'
     
 },
 {
@@ -223,6 +247,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Malta Tauari',
     
     imagem: './assets/imgs/produtos/maltatauari.jpg',
+
+    link: './maltatauari.html'
     
 },
 {
@@ -230,6 +256,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta BBB Tauari',
     
     imagem: './assets/imgs/produtos/bbbtauari.jpeg',
+
+    link: './bbbtauari.html'
     
 },
 {
@@ -237,6 +265,8 @@ imagem: './assets/imgs/produtos/bbbseladaeucalipto.jpeg',
     nome: 'Porta Selada Frisada Eucalipto',
     
     imagem: './assets/imgs/produtos/seladafrisadaeucalipto.jpg',
+
+    link: './seladafrisadaeucalipto.html'
     
 },
 
@@ -247,7 +277,9 @@ fogo: [
 
 nome: 'Caixilho de Cambará',
 
-imagem: './assets/imgs/produtos/cambara.jpg'
+imagem: './assets/imgs/produtos/cambara.jpg',
+
+link: './caixilhocambara.html'
 
 },
 
@@ -255,7 +287,9 @@ imagem: './assets/imgs/produtos/cambara.jpg'
 
 nome: 'Caixilho de Pinus',
     
-imagem: './assets/imgs/produtos/Caixilho de Pinus.png'
+imagem: './assets/imgs/produtos/Caixilho de Pinus.png',
+
+link: './caixilhopinus.html'
     
 },
 
@@ -263,7 +297,9 @@ imagem: './assets/imgs/produtos/Caixilho de Pinus.png'
 
 nome: 'Caixilho de Tauari',
 
-imagem: './assets/imgs/produtos/Caixilho de Tauari.png'
+imagem: './assets/imgs/produtos/Caixilho de Tauari.png',
+
+link: './caixilhotauari.html'
 
 },
 
@@ -271,14 +307,18 @@ imagem: './assets/imgs/produtos/Caixilho de Tauari.png'
 
 nome: 'Caixilho Mogno Regulável',
 
-imagem: './assets/imgs/produtos/Caixilho Mogno Regulável.png'
+imagem: './assets/imgs/produtos/Caixilho Mogno Regulável.png',
+
+link: './caixilhomognoregulavel.html'
 
 },
 {
 
     nome: 'Caixilho Branco Regulável',
     
-    imagem: './assets/imgs/produtos/Caixilho Branco Regulável.png'
+    imagem: './assets/imgs/produtos/Caixilho Branco Regulável.png',
+
+    link: './caixilhobrancoregulavel.html'
     
 }
 
@@ -290,7 +330,9 @@ promocoes: [
 
         nome: 'Dobradiça Cromada',
 
-        imagem: './assets/imgs/produtos/acessorios/Dobradiça Cromada.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Dobradiça Cromada.jpg',
+
+        link: './dobradicacromada.html'
 
     },
 
@@ -298,7 +340,9 @@ promocoes: [
 
         nome: 'Dobradiça de Sobrepor',
 
-        imagem: './assets/imgs/produtos/acessorios/Dobradiça de Sobrepor.png'
+        imagem: './assets/imgs/produtos/acessorios/Dobradiça de Sobrepor.png',
+
+        link: './dobradicasobrepor.html'
 
     },
 
@@ -306,7 +350,9 @@ promocoes: [
 
         nome: 'Dobradiça de Sobrepor Preta',
 
-        imagem: './assets/imgs/produtos/acessorios/Dobradiça de Sobrepor Preta.png'
+        imagem: './assets/imgs/produtos/acessorios/Dobradiça de Sobrepor Preta.png',
+
+        link: './dobradicasobreporpreta.html'
 
     },
 
@@ -314,7 +360,9 @@ promocoes: [
 
         nome: 'Dobradiça Dourada',
 
-        imagem: './assets/imgs/produtos/acessorios/Dobradiça Dourada.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Dobradiça Dourada.jpg',
+
+        link: './dobradicadourada.html'
 
     },
 
@@ -322,7 +370,9 @@ promocoes: [
 
         nome: 'Fechadura 1',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 1.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 1.jpg',
+
+        link: './fechadura1.html'
 
     },
 
@@ -330,7 +380,9 @@ promocoes: [
 
         nome: 'Fechadura 2',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 2.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 2.jpg',
+
+        link: './fechadura2.html'
 
     },
 
@@ -338,7 +390,9 @@ promocoes: [
 
         nome: 'Fechadura 3',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 3.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 3.jpg',
+
+        link: './fechadura3.html'
 
     },
 
@@ -346,7 +400,9 @@ promocoes: [
 
         nome: 'Fechadura 4',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 4.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 4.jpg',
+
+        link: './fechadura4.html'
 
     },
 
@@ -354,7 +410,9 @@ promocoes: [
 
         nome: 'Fechadura 5',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 5.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 5.jpg',
+
+        link: './fechadura5.html'
 
     },
 
@@ -362,7 +420,9 @@ promocoes: [
 
         nome: 'Fechadura 6',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 6.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 6.jpg',
+
+        link: './fechadura6.html'
 
     },
 
@@ -370,30 +430,38 @@ promocoes: [
 
         nome: 'Fechadura 7',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 7.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 7.jpg',
+
+        link: './fechadura7.html'
 
     },
 
+    {
+
+        nome: 'Fechadura 8',
+
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 9.jpg',
+
+        link: './fechadura8.html'
+
+    },
     {
 
         nome: 'Fechadura 9',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 9.jpg'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 10.png',
+
+        link: './fechadura9.html'
 
     },
+
     {
 
         nome: 'Fechadura 10',
 
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 10.png'
+        imagem: './assets/imgs/produtos/acessorios/Fechadura 11.png',
 
-    },
-
-    {
-
-        nome: 'Fechadura 11',
-
-        imagem: './assets/imgs/produtos/acessorios/Fechadura 11.png'
+        link: './fechadura10.html'
 
     },
 
@@ -401,7 +469,9 @@ promocoes: [
 
         nome: 'Puxador Curvo Inox',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Curvo Inox.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Curvo Inox.png',
+
+        link: './puxadorcurvoinox.html'
 
     },
 
@@ -409,7 +479,9 @@ promocoes: [
 
         nome: 'Puxador Curvo Preto',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Curvo Preto.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Curvo Preto.png',
+
+        link: './puxadorcurvopreto.html'
 
     },
 
@@ -417,7 +489,9 @@ promocoes: [
 
         nome: 'Puxador Dourado',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Dourado.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Dourado.png',
+
+        link: './puxadordourado.html'
 
     },
 
@@ -425,7 +499,9 @@ promocoes: [
 
         nome: 'Puxador Escovado',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Escovado.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Escovado.png',
+
+        link: './puxadorescovado.html'
 
     },
 
@@ -433,7 +509,9 @@ promocoes: [
 
         nome: 'Puxador Inox',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Inox.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Inox.png',
+
+        link: './puxadorinox.html'
 
     },
 
@@ -441,7 +519,9 @@ promocoes: [
 
         nome: 'Puxador Preto',
 
-        imagem: './assets/imgs/produtos/acessorios/Puxador Preto.png'
+        imagem: './assets/imgs/produtos/acessorios/Puxador Preto.png',
+
+        link: './puxadorpreto.html'
 
     }
 
@@ -601,3 +681,4 @@ document.addEventListener('DOMContentLoaded', function() {
     addSmoothScroll(navLinks);
     addSmoothScroll(footerNavLinks);
 }); 
+
