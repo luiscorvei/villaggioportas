@@ -7,6 +7,10 @@
     -webkit-touch-callout: none;
 }
 
+.button{
+    color: black;
+}
+
 a, p, span, div, button {
     color: black;
     -webkit-text-size-adjust: 100%;
@@ -498,6 +502,7 @@ body {
 }
 
 .product .button {
+    color: black;
     background-color: #ffecd1;
     border: 1px solid #ffecd1;
     border-radius: 20px;
@@ -510,6 +515,7 @@ body {
     transition: all 0.3s ease;
 }
 .product .button:hover {
+    color: black;
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
