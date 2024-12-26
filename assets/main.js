@@ -539,7 +539,7 @@ function criarProdutoHTML(produto) {
             <img src="${produto.imagem}" alt="${produto.nome}" onclick="redirecionarProduto('${produto.link || '#'}')"/>
         </div>
         <div class="title">${produto.nome}</div>
-        <button class="button" onclick="redirecionarProduto('${produto.link || '#'}')">Ver</button>
+        <button class="button" style="color: black;" onclick="redirecionarProduto('${produto.link || '#'}')">Ver</button>
     </div>
     `;
 }
