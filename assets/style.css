@@ -1,20 +1,15 @@
 * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: 100%;
     -webkit-touch-callout: none;
-    -webkit-user-select: none;
 }
 
-a, p, span, div, input, textarea {
-    -webkit-appearance: none;
+a, p, span, div, button {
+    color: black;
     -webkit-text-size-adjust: 100%;
-    color: black;
-    text-decoration: none;
-}
-
-a {
-    color: black;
-    -webkit-tap-highlight-color: transparent;
 }
 
 body {
