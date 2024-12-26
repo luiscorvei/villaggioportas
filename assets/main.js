@@ -533,21 +533,15 @@ promocoes: [
 // Função para criar HTML do produto
 
 function criarProdutoHTML(produto) {
-
     return `
-
     <div class="product">
-
-        <img src="${produto.imagem}" alt="${produto.nome}"/>
-
+        <div class="product-image-container">
+            <img src="${produto.imagem}" alt="${produto.nome}" onclick="redirecionarProduto('${produto.link || '#'}')"/>
+        </div>
         <div class="title">${produto.nome}</div>
-
         <button class="button" onclick="redirecionarProduto('${produto.link || '#'}')">Ver</button>
-
     </div>
-
     `;
-
 }
 
 function redirecionarProduto(link) {

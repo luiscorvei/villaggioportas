@@ -2,6 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+}
+
+a, p, span, div {
+    color: black;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -301,7 +309,7 @@ body {
     .nav ul {
 
         display: none;
-        margin: 0;;
+        margin: 0;
 
     }
 
@@ -1411,6 +1419,27 @@ html, body {
 }
 
 @media screen and (max-width: 480px) {
+
+    .nav {
+        display: flex;
+
+        flex-wrap: wrap; /* Permite que os botões se movam para a próxima linha */
+
+        justify-content: center;
+    }
+    
+    .nav button {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        width: 45%;
+        margin: 2.5%;
+        cursor: pointer;
+    }
+    
+
     body {
         font-size: 12px;
     }
@@ -1508,4 +1537,20 @@ html, body {
     .carousel-item p {
         font-size: 0.7em;
     }
+}
+
+.product .product-image-container {
+
+    cursor: pointer;
+
+}
+
+@media (max-width: 768px) {
+
+    .carousel-control {
+
+        display: none !important; /* Força a remoção, caso tenha outros estilos */
+
+    }
+
 }
