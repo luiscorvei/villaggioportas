@@ -129,7 +129,7 @@ link: './frisada.html'
 
 ],
 
-entrada: [
+externas: [
 
 {
 
@@ -272,7 +272,7 @@ link: './bbbseladaeucalipto.html'
 
 ],
 
-fogo: [
+caixilhos: [
 {
 
 nome: 'Caixilho de Cambará',
@@ -324,7 +324,7 @@ link: './caixilhomognoregulavel.html'
 
 ],
 
-promocoes: [
+acessorios: [
 
     {
 
@@ -607,6 +607,8 @@ carregarProdutos(categoria);
 // Carrega produtos iniciais (internos)
 
 carregarProdutos('internas');
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     // Seleciona todos os links de navegação
